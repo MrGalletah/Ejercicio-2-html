@@ -29,7 +29,7 @@ img {
 }
 
 nav {
-  position: absolute;
+  position: sticky;
   top: 0;
   right: 0;
   left: 0;
@@ -39,6 +39,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10;
 }
 
 .logo {
@@ -60,6 +61,16 @@ nav > ul > li {
   list-style-type: none;
   font-size: 1.5rem;
   color: var(--text-main);
+  transition: all 0.3s;
+}
+
+nav > ul > li:hover {
+  transform: scale(1.1);
+}
+
+nav > ul > li > a:hover {
+  color: var(--accent);
+  transition: all 0.3s;
 }
 
 footer {

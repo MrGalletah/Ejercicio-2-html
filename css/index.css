@@ -6,6 +6,11 @@ body {
   flex-direction: column;
 }
 
+
+nav {
+  position: absolute;
+}
+
 h1 {
   font-size: 4rem;
   color: var(--accent);

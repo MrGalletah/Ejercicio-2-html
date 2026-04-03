@@ -1,0 +1,143 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  text-align: center;
+  padding-top: 20px;
+}
+
+h1 {
+  color: var(--accent);
+  text-shadow: rgba(56, 189, 248, 0.4) 0px 0px 10px;
+}
+
+.wrapper {
+  width: 60%;
+  min-height: 600px;
+  margin: 60px auto;
+  background-color: var(--bg-card);
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  padding: 16px;
+}
+
+.container {
+  height: 530px;
+  display: flex;
+  gap: 1rem;
+  padding: 16px;
+}
+
+.card {
+  flex: 1;
+  border-radius: 8px;
+  background-color: var(--bg-dark);
+  transition: all 0.3s;
+  padding: 8px;
+  border: 1px solid #334155;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  border: 1px solid var(--primary);
+}
+
+h2 {
+  margin-top: 18px;
+  font-size: 1.3rem;
+  color: var(--accent);
+}
+
+.projectImg {
+  padding: 2rem;
+  height: 200px;
+  width: 100%;
+}
+
+.projectImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 4px;
+}
+
+.desc {
+  height: 220px;
+  padding: 8px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.repo {
+  text-align: end;
+}
+
+.btnCurso,
+.btnCurso:link,
+.btnCurso:visited {
+  display: inline-block;
+  background-color: transparent;
+  padding: 16px;
+  border-radius: 8px;
+  transition: all 0.3s;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.btnCurso:hover,
+.btnCurso:active {
+  background-color: var(--primary);
+  color: var(--text-main);
+  border-color: var(--primary);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+.repo > span > a {
+  color: var(--accent);
+}
+
+h3 {
+  margin: 1rem 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table,
+th,
+td {
+  border: none;
+}
+
+th {
+  background-color: var(--primary);
+  color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+td {
+  padding: 1rem;
+  background-color: var(--bg-dark);
+  border-bottom: 1px solid #334155;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+td > a,
+td > a:visited {
+  color: var(--accent);
+  text-decoration: none;
+}
