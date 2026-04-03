@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscripcion - Expo Joven Full Stack</title>
+    <link rel="icon" type="image/x-icon" href="../img/logo.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/inscripcion.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="../img/logo.jpg" alt="Expo joven logo" />
+      </div>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="./info.html">Información</a></li>
+        <li><a href="./actividades.html">Talleres y Proyectos</a></li>
+        <li><a href="./galeria.html">Galería</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="wrapper">
+        <div class="container">
+          <h1>Reserva tu lugar</h1>
+          <h2>
+            Completa el siguiente formulario para participar en la Expo Joven
+          </h2>
+          <form action="" id="form">
+            <div>
+              <label for="nombre">Nombre:</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Tu nombre"
+                required
+              />
+            </div>
+            <div>
+              <label for="apellido">Apellido:</label>
+              <input
+                type="text"
+                id="apellido"
+                name="apellido"
+                placeholder="Tu apellido"
+                required
+              />
+            </div>
+            <div>
+              <label for="correo">Correo Electrónico:</label>
+              <input
+                type="email"
+                id="correo"
+                name="correo"
+                placeholder="ejemplo@correo.com"
+                required
+              />
+            </div>
+            <div>
+              <label for="edad">Edad:</label>
+              <input
+                type="number"
+                id="edad"
+                name="edad"
+                placeholder="18"
+                required
+              />
+            </div>
+            <div>
+              <label for="curso">Curso de interés:</label>
+              <select id="curso" name="curso" required>
+                <option value="" selected disabled>
+                  --Seleccione un curso--
+                </option>
+                <option value="Introducción al Desarrollo Web">Introducción al Desarrollo Web</option>
+                <option value="Introducción al MERN stack">Introducción al MERN stack</option>
+                <option value="PHP y MySQL">PHP y MySQL</option>
+              </select>
+            </div>
+            <div>
+              <label>Turno preferido:</label>
+              <div class="centered">
+                <input
+                  type="radio"
+                  id="manana"
+                  name="turno"
+                  value="mañana"
+                  required
+                />
+                <label for="manana">Mañana</label>
+                <input
+                  type="radio"
+                  id="tarde"
+                  name="turno"
+                  value="tarde"
+                  required
+                />
+                <label for="tarde">Tarde</label>
+              </div>
+            </div>
+            <div>
+              <div class="centered">
+                <input
+                  type="checkbox"
+                  id="condiciones"
+                  name="condiciones"
+                  required
+                  value="acepto"
+                  class="checkbox-input"
+                />
+                <label for="condiciones">Acepto las condiciones</label>
+              </div>
+            </div>
+            <div class="centered">
+              <button type="submit" value="Enviar Formulario">
+                Enviar Inscripción
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        Instituto Superior Brazo Oriental © 2026 - Creado por
+        <a href="https://github.com/MrGalletah" target="_blank">MrGalletah</a>
+      </p>
+    </footer>
+    <script src="../utils/script.js"></script>
+  </body>
+</html>
