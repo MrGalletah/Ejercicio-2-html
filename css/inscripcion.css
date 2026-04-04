@@ -60,6 +60,7 @@ form div {
 
 label {
     font-size: 1.3rem;
+    text-align: start;
 }
 
 input[type="text"],
